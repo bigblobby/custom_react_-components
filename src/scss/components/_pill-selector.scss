@@ -1,0 +1,51 @@
+.pill-selector {
+    &.inactive {
+        display: none;
+    }
+
+    h4 {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    .options {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        background-color: #fff;
+        border: 1px solid #d2d2d2;
+        border-radius: 25px;
+        padding: 0.3rem 0;
+        margin-bottom: 1.5rem;
+        pointer-events: none;
+        height: 30px;
+
+        .selector {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 30px;
+            width: 25%;
+            border: 2px solid #464646;
+            border-radius: 25px;
+            pointer-events: none;
+            transition: left 0.2s ease;
+        }
+
+        span {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 25%;
+            text-align: center;
+            cursor: pointer;
+            pointer-events: all;
+            color: #464646;
+
+            &.active {
+                color: #464646;
+            }
+        }
+    }
+}
