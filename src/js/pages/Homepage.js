@@ -1,6 +1,7 @@
 import React from 'react';
 import Select from "../components/Select";
 import PillSelector from "../components/PillSelector";
+import {NavLink} from "react-router-dom";
 
 let SELECT_OPTIONS = [
     {
@@ -50,6 +51,11 @@ export default class Homepage extends React.Component {
         return (
             <div>
                 <h1>Homepage</h1>
+                <ul className="nav">
+                    <li><NavLink to={"accordion"}>Accordion</NavLink></li>
+                    <li><NavLink to={"pill"}>Pill selector</NavLink></li>
+                    <li><NavLink to={"selector"}>Selector</NavLink></li>
+                </ul>
                 <div className="select-container">
                     <Select
                         options={this.state.selectOptions}

@@ -1,0 +1,25 @@
+.accordion {
+    margin-bottom: 5rem;
+
+    .accordion-row {
+        border: 1px solid #e0e0e0;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.accordion {
+    .title {
+        padding: 1rem;
+        transition: border 0.2s ease;
+    }
+    .accordion-collapse {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.2s ease;
+
+        .content {
+            padding: 1rem;
+            border-top: 1px solid #e0e0e0
+        }
+    }
+}
