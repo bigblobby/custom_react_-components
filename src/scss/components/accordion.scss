@@ -8,18 +8,22 @@
 }
 
 .accordion {
-    .title {
-        padding: 1rem;
-        transition: border 0.2s ease;
-    }
-    .accordion-collapse {
-        height: 0;
-        overflow: hidden;
-        transition: height 0.2s ease;
-
-        .content {
+    .accordion-row {
+        .title {
+            display: flex;
+            justify-content: space-between;
             padding: 1rem;
-            border-top: 1px solid #e0e0e0
+            transition: border 0.2s ease;
+        }
+        .accordion-collapse {
+            height: 0;
+            overflow: hidden;
+            transition: height 0.2s ease;
+
+            .content {
+                padding: 1rem;
+                border-top: 1px solid #e0e0e0
+            }
         }
     }
 }

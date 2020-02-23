@@ -6,8 +6,8 @@ export const withAccordionContext = Component => {
     return props => {
         return (
             <AccordionContext.Consumer>
-                {({activeID, handleDropdown}) => {
-                    return <Component {...props} context={{ handleDropdown: handleDropdown, activeID: activeID }} />;
+                {({activeID, handleDropdown, multiple}) => {
+                    return <Component {...props} context={{ handleDropdown: handleDropdown, activeID: activeID, multiple: multiple }} />;
                 }}
             </AccordionContext.Consumer>
         );
