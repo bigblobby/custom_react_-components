@@ -30,7 +30,7 @@ class Collapse extends React.Component{
                 this.setState({ height: 0});
             }
         } else {
-            if(this.props.id == this.props.context.activeID){
+            if(this.props.id === this.props.context.activeID){
                 this.setState({ height: this.content.current.scrollHeight });
             } else {
                 this.setState({ height: 0});

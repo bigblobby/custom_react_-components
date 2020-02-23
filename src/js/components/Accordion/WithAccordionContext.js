@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from "react";
 import {AccordionContext} from "./Context";
 
 // This middleware is used so we can access the context anywhere, not just in 'Component' render method.

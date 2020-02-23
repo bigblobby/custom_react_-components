@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from "react";
 import Row from "./Row";
 import Collapse from "./Collapse";
 import Header from "./Header";
 
 import { AccordionContext } from "./Context";
 
-class Accordion extends Component {
+class Accordion extends React.Component {
 
     static defaultProps = {
         multiple: false
@@ -39,7 +39,7 @@ class Accordion extends Component {
         } else {
             let value;
 
-            if(this.state.activeID == id) {
+            if(this.state.activeID === id) {
                 value = null;
             } else {
                 value = id;

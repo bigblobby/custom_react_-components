@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
 import PillSelector from "../components/PillSelector";
 
@@ -7,9 +7,16 @@ export default class PillSelectorPage extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {}
+        this.state = {
+            pillValue: null
+        }
     }
 
+    handlePillSelect = (stateName, value) => {
+        this.setState({
+            [stateName]: value
+        })
+    };
 
     render(){
         return (

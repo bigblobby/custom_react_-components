@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from "react";
 
-class Select extends Component {
+class Select extends React.Component {
     static defaultProps = {
         options: [],
         label: '',

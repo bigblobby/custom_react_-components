@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default class PillSelector extends React.Component {
     static defaultProps = {
@@ -70,7 +70,7 @@ export default class PillSelector extends React.Component {
                     {
                         this.props.options.map(option => {
                             return(
-                                <span className={(this.state.value == option ? 'active' : '')} key={option} data-value={option}>{option}</span>
+                                <span className={(this.state.value === option ? 'active' : '')} key={option} data-value={option}>{option}</span>
                             )
                         })
                     }

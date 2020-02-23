@@ -1,5 +1,4 @@
 import React from "react";
-import {AccordionContext} from "./Context";
 import {withAccordionContext} from "./WithAccordionContext";
 
 class Header extends React.Component{

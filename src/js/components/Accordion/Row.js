@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {withAccordionContext} from "./WithAccordionContext";
 
 class Row extends React.Component{
@@ -33,7 +33,7 @@ class Row extends React.Component{
                 this.setState({ isActive: false });
             }
         } else {
-            if(this.props.id == this.props.context.activeID) {
+            if(this.props.id === this.props.context.activeID) {
                 this.setState({ isActive: true });
             } else {
                 this.setState({ isActive: false });
