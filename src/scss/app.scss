@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 // Pages
 @import "./pages/homepage";
 
@@ -9,3 +13,4 @@
 @import "./components/select";
 @import "./components/pill-selector";
 @import "./components/accordion";
+@import "./components/steps";
