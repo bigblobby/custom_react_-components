@@ -17,6 +17,7 @@ export default class Homepage extends React.Component {
                     <li><NavLink to={"accordion"}>Accordion</NavLink></li>
                     <li><NavLink to={"pill"}>Pill selector</NavLink></li>
                     <li><NavLink to={"selector"}>Selector</NavLink></li>
+                    <li><NavLink to={"steps"}>Steps</NavLink></li>
                 </ul>
             </div>
         )

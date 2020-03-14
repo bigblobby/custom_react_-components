@@ -16,7 +16,7 @@ class Steps extends React.Component {
                     <div className="step-rail"></div>
                     <div className="steps">
                         {
-                            Array(this.props.totalSteps).fill(0).map((step, index) => {
+                            Array(this.props.totalSteps).fill(null).map((step, index) => {
                                 return <div className={"step " + ((index + 1) === currentStep ? 'current ' : ' ') + ((index + 1) < currentStep ? 'completed' : '') }></div>
                             })
                         }
